@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Показ картинки</title>
+</head>
+<body>
+    <h2>Показ картинки по запрошенной категории</h2>
+    {% if path_image %}
+        <p>Найденная картинка</p>
+        <img src={{ path_image}} >
+    {% else %}
+        <p>Картинки по выбранной(ыми) категорией(ями) нет =(</p>
+    {% endif %}
+    <h3>{{ error }}</h3>
+</body>
+</html>
